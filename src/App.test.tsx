@@ -1,12 +1,11 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
 import { createRenderer } from "react-test-renderer/shallow";
 import App from "./App";
 
 const renderer = createRenderer();
 
 const renderApp = () => {
-    <App />;
+    return <App />;
 };
 
 describe("<App />", () => {
