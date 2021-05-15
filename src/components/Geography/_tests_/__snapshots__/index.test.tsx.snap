@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Geography/> should render and match snapshot 1`] = `
+<path
+  class="rsm-geography "
+  fill="rgba(0, 98, 71, 1)"
+  style="outline: none;"
+  tabindex="0"
+/>
+`;
