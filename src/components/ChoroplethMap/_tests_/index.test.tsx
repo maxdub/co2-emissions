@@ -1,15 +1,14 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
 import { createRenderer } from "react-test-renderer/shallow";
-import App from "./App";
+import ChoroplethMap from "../";
 
 const renderer = createRenderer();
 
 const renderApp = () => {
-    <App />;
+    <ChoroplethMap />;
 };
 
-describe("<App />", () => {
+describe("<ChoroplethMap/>", () => {
     it("should render and match snapshot", () => {
         renderApp();
         const output = renderer.getRenderOutput();
