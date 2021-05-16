@@ -6,7 +6,7 @@ import { CountryCo2Data } from "../ChoroplethMap/types";
 const colorScale = scaleLinear().domain([0, 100, 500, 5000, 10000]).range([0, 150, 200, 225, 255]);
 
 export type Props = {
-    geo: any; //@@WISH ?
+    geo: any;
     data: CountryCo2Data;
     curYear: number;
     setTooltip: (content: string) => void;
