@@ -7,17 +7,18 @@ import { Props } from "../";
 
 const renderer = createRenderer();
 
-const renderComponent = ({ geo, curYear, data }: Props) => {
-    return render(<Geography geo={geo} curYear={curYear} data={data} />);
+const renderComponent = ({ geo, curYear, data, setTooltip }: Props) => {
+    return render(<Geography setTooltip={setTooltip} geo={geo} curYear={curYear} data={data} />);
 };
 
 describe("<Geography/>", () => {
     const geo: {} = {};
     const curYear: number = 1991;
     const data: CountryCo2Data = {};
+    const setTooltip = () => null;
 
     it("should render and match snapshot", () => {
-        const output = renderComponent({ geo, curYear, data });
+        const output = renderComponent({ geo, curYear, setTooltip, data });
         expect(output.container.firstChild).toMatchSnapshot();
     });
 });

@@ -25,7 +25,7 @@ const marks = [
     },
 ];
 
-type Props = {
+export type Props = {
     curYear: number;
     onChange: (event: React.ChangeEvent<{}>, value: number | number[]) => void;
 };
@@ -33,7 +33,7 @@ type Props = {
 function Slider({ curYear, onChange }: Props) {
     return (
         <SliderContainer>
-            <SliderLabel>CO2 Emissions on Year {curYear}</SliderLabel>
+            <SliderLabel data-testid="slider-label">CO2 Emissions in Year {curYear}</SliderLabel>
             <MaterialSlider
                 onChangeCommitted={onChange}
                 marks={marks}
@@ -46,9 +46,9 @@ function Slider({ curYear, onChange }: Props) {
     );
 }
 
-const SliderLabel = styled.label``;
+const SliderLabel = styled.p``;
 
-const SliderContainer = styled.label`
+const SliderContainer = styled.div`
     width: 400px;
 `;
 

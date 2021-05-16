@@ -2,7 +2,6 @@ import React, { useMemo } from "react";
 import { Geography as SimpleMapsGeography } from "react-simple-maps";
 import { scaleLinear } from "d3-scale";
 import { CountryCo2Data } from "../ChoroplethMap/types";
-import { TooltipContent } from "../Tooltip";
 
 const colorScale = scaleLinear().domain([0, 100, 500, 5000, 10000]).range([0, 150, 200, 225, 255]);
 

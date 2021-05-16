@@ -5,18 +5,16 @@ import Geography from "../Geography";
 import styled from "styled-components/macro";
 import Slider from "../Slider";
 import ReactTooltip from "react-tooltip";
-import Tooltip from "../Tooltip";
 
-type Props = {};
+const projectionConfig = {
+    scale: 147,
+};
 
-const geoUrl = "";
-
-function ChoroplethMap(props: Props) {
+function ChoroplethMap() {
     const [data, setData] = useState<CountryCo2Data>({});
     const [geo, setGeo] = useState({});
     const [loading, setLoading] = useState(false);
     const [curYear, setYear] = useState<number>(2019);
-
     const [content, setTooltip] = useState("");
 
     useEffect(() => {
@@ -50,14 +48,7 @@ function ChoroplethMap(props: Props) {
                 }}
             />
             {loading && <Loading>Loading CO2 data...</Loading>}
-            <ComposableMap
-                data-tip="choropleth"
-                height={500}
-                projectionConfig={{
-                    rotate: [-10, 0, 0],
-                    scale: 147,
-                }}
-            >
+            <ComposableMap data-tip="World" height={500} projectionConfig={projectionConfig}>
                 <Sphere fill="#F8F8F8" id="choropleth" stroke="#E4E5E6" strokeWidth={0.5} />
                 <Graticule stroke="#E4E5E6" strokeWidth={0.5} />
                 {Object.keys(data).length > 0 && (
@@ -82,7 +73,7 @@ function ChoroplethMap(props: Props) {
 
 const Loading = styled.p`
     position: absolute;
-    top: 100px;
+    top: 140px;
 `;
 
 export default ChoroplethMap;

@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Slider/> should render and match snapshot 1`] = `
+<div
+  class="Slider__SliderContainer-l2gxtt-1 fkazSp"
+>
+  <p
+    class="Slider__SliderLabel-l2gxtt-0"
+    data-testid="slider-label"
+  >
+    CO2 Emissions in Year 
+    1991
+  </p>
+  <span
+    class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-marked"
+  >
+    <span
+      class="MuiSlider-rail"
+    />
+    <span
+      class="MuiSlider-track"
+      style="left: 0%; width: 100%;"
+    />
+    <input
+      type="hidden"
+      value="2019"
+    />
+    <span
+      class="MuiSlider-mark MuiSlider-markActive"
+      data-index="0"
+      style="left: 0%;"
+    />
+    <span
+      aria-hidden="true"
+      class="MuiSlider-markLabel MuiSlider-markLabelActive"
+      data-index="0"
+      style="left: 0%;"
+    >
+      1864
+    </span>
+    <span
+      class="MuiSlider-mark MuiSlider-markActive"
+      data-index="1"
+      style="left: 23.225806451612904%;"
+    />
+    <span
+      aria-hidden="true"
+      class="MuiSlider-markLabel MuiSlider-markLabelActive"
+      data-index="1"
+      style="left: 23.225806451612904%;"
+    >
+      1900
+    </span>
+    <span
+      class="MuiSlider-mark MuiSlider-markActive"
+      data-index="2"
+      style="left: 55.483870967741936%;"
+    />
+    <span
+      aria-hidden="true"
+      class="MuiSlider-markLabel MuiSlider-markLabelActive"
+      data-index="2"
+      style="left: 55.483870967741936%;"
+    >
+      1950
+    </span>
+    <span
+      class="MuiSlider-mark MuiSlider-markActive"
+      data-index="3"
+      style="left: 87.74193548387096%;"
+    />
+    <span
+      aria-hidden="true"
+      class="MuiSlider-markLabel MuiSlider-markLabelActive"
+      data-index="3"
+      style="left: 87.74193548387096%;"
+    >
+      2000
+    </span>
+    <span
+      class="MuiSlider-mark MuiSlider-markActive"
+      data-index="4"
+      style="left: 100%;"
+    />
+    <span
+      aria-hidden="true"
+      class="MuiSlider-markLabel MuiSlider-markLabelActive"
+      data-index="4"
+      style="left: 100%;"
+    >
+      2019
+    </span>
+    <span
+      aria-orientation="horizontal"
+      aria-valuemax="2019"
+      aria-valuemin="1864"
+      aria-valuenow="2019"
+      class="MuiSlider-thumb MuiSlider-thumbColorPrimary"
+      data-index="0"
+      role="slider"
+      style="left: 100%;"
+      tabindex="0"
+    />
+  </span>
+</div>
+`;
